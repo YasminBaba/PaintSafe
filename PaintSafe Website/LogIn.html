@@ -1,0 +1,117 @@
+<!--This is a log in page-->
+<!--Note that everything has been made accesible whether you log in or not, this is just extra-->
+<!--Log in with the username 'Ed' and password 'Stott' and it will take you to your sensor data page!-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>PaintSafe</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>PaintSafe</strong> HomePage</a>
+									<ul class="icons">
+										<!--The following code allows the user to visit the company's social media accounts if there were any-->
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="LogIn.html" class="button small">Log in/Sign up</a></li>
+									</ul>
+								</header>
+
+								<!-- Content -->
+								<section>
+									<div id="container">
+										<h2 id="content">Already have a sensor? Log in to see your live VOC levels!</h2>
+										<!--Form-->
+										<form id="logInForm">
+										Username: <input id="username" type ="text" size = "20"><br />
+										Password: <input id="password" type="password" size = "20"><br />
+										<input type="button" onclick="check(logInForm)" value="Login"/>
+										</form>
+										<!--The following function checks if your username and password match-->
+										<script language="javascript">
+										function check(form)
+										{
+										  if(form.username.value == "Ed" && form.password.value == "Stott")
+										  {
+										    location=('FormAndSensorData.html');
+											}
+										 else
+										 {
+										   alert("Oops! Username/password do not match!");
+										  }
+										}
+										</script>
+
+								</div>
+								</section>
+						</div>
+					</div>
+
+					<!-- Sidebar -->
+						<div id="sidebar">
+							<div class="inner">
+
+								<!-- Search -->
+									<section id="search" class="alt">
+										<form method="post" action="#">
+											<input type="text" name="query" id="query" placeholder="Search" />
+										</form>
+									</section>
+
+								<!-- Menu -->
+									<nav id="menu">
+										<header class="major">
+											<h2>Menu</h2>
+										</header>
+										<ul>
+											<li><a href="HomePage.html">Homepage</a></li>
+											<li><a href="AboutVOCs.html">About VOCs</a></li>
+											<li><a href="FormAndSensorData.html">My VOC Level</a></li>
+											</li>
+										</ul>
+									</nav>
+
+									<!-- Section -->
+										<section>
+											<header class="major">
+												<p>
+
+												</p>
+												<h2>Get in touch</h2>
+											</header>
+											<p>Got a question? Hit up the team at PaintSafe for any queries you may have.</p>
+											<ul class="contact">
+												<li class="fa-envelope-o"><a href="#">info.paintsafe@hotmail.com</a></li>
+												<li class="fa-phone">07123456789</li>
+												<li class="fa-home">Imperial College London, Exhibition Road,<br />
+												London, UK, SW7 2AZ</li>
+											</ul>
+										</section>
+
+							</div>
+						</div>
+
+				</div>
+			<!-- Scripts -->
+				<script src="assets/js/jquery.min.js"></script>
+				<script src="assets/js/browser.min.js"></script>
+				<script src="assets/js/breakpoints.min.js"></script>
+				<script src="assets/js/util.js"></script>
+				<script src="assets/js/main.js"></script>
+	</body>
+</html>
